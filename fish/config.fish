@@ -7,7 +7,7 @@ if status is-interactive
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
 
     # Backup shortcut
-    alias bku='bash ~/Public/dotfiles/copier.sh'
+    alias bku='bash ~/Public/dotfiles/backup.sh'
     
     #Navigating files and dir
     alias ls='exa --icons'
