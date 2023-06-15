@@ -18,7 +18,6 @@ else
 fi
 
 cp -r ~/.config/fish/ $BACKUP_DIR
-mkdir $BACKUP_DIR/tmux
 cp -r ~/.config/tmux/tmux.conf $BACKUP_DIR/tmux
 cp -r ~/.config/alacritty $BACKUP_DIR
 cp -r ~/.config/vlc $BACKUP_DIR
