@@ -24,6 +24,7 @@ cp -r ~/.config/vlc $BACKUP_DIR
 
 git add $BACKUP_DIR
 git commit -m "Backed up!!"
+git push
 
 cd $PRESENT_WORKING_DIR
 echo Done !!!
