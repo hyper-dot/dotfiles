@@ -5,17 +5,15 @@ if status is-interactive
     export PATH="/home/linux/.yarn/bin/:$PATH" # yarn global binaries
     export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
+
+    # Backup shortcut
+    alias bku='bash ~/Public/dotfiles/copier.sh'
     
     #Navigating files and dir
     alias ls='exa --icons'
     alias la='exa --icons -a'
     alias ll='exa -la -F -s=mod -r --icons --git --group-directories-first --git'
     alias lol='clear && fortune | cowsay -f tux | lolcat'
-
-    # Colorpicker
-    function cpicker
-      grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
-    end
 
     # Pacman
     alias install="sudo pacman -S"
@@ -28,7 +26,6 @@ if status is-interactive
     # Alias for tmux
     alias t="tmux"
     alias ta="tmux attach"
-
 
     # Golang 
     alias gr="go run"
