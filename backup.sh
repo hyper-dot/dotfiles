@@ -1,8 +1,9 @@
 #!/bin/bash
 
+# Variables
 BACKUP_DIR=~/Public/dotfiles/
-
 PRESENT_WORKING_DIR=$(pwd)
+DATE=$(date)
 
 cd $BACKUP_DIR
 
@@ -23,7 +24,7 @@ cp -r ~/.config/alacritty $BACKUP_DIR
 cp -r ~/.config/vlc $BACKUP_DIR
 
 git add $BACKUP_DIR
-git commit -m "Backed up!!"
+git commit -m "$DATE"
 git push
 
 cd $PRESENT_WORKING_DIR
