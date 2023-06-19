@@ -2,7 +2,7 @@ import:
   - ~/.alacritty-colorscheme/themes/pencil_dark.yaml
 
 window:
-  title: 🚀
+  title: 
   dynamic_title: false
   padding:
     x: 0
