@@ -1,0 +1,14 @@
+#!/bin/sh
+
+today=$(date +%Y-%m-%d-%A)
+noteFilename="$HOME/Notes/note-$today.md"
+
+if [ ! -f $noteFilename ]; then
+  echo "# Notes for $today" > $noteFilename
+fi
+
+nvim -c "norm Go" \
+  -c "norm Go## $(date +%H:%M)" \
+  -c "norm G2o" \
+  -c "norm zz" \
+  -c "startinsert" $noteFilename
