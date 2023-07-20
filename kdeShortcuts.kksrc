@@ -6,16 +6,20 @@ New=
 _launch=Meta+Return
 
 [KDE Keyboard Layout Switcher][Global Shortcuts]
+Switch keyboard layout to English (US)=
+Switch keyboard layout to German=
+Switch keyboard layout to German (QWERTY)=
+Switch keyboard layout to Nepali=
 Switch to Next Keyboard Layout=Meta+Alt+K
 
 [StandardShortcuts]
 AboutApp=
 AboutKDE=
-Activate Next Tab=Ctrl+PgDown; Ctrl+]
+Activate Next Tab=Ctrl+]; Ctrl+PgDown
 Activate Previous Tab=Ctrl+[; Ctrl+PgUp
 ActualSize=Ctrl+0
 AddBookmark=Ctrl+B
-Back=Back; Alt+Left
+Back=Alt+Left; Back
 BackwardWord=Ctrl+Left
 Begin=Ctrl+Home
 BeginningOfLine=Home
@@ -23,9 +27,9 @@ Clear=
 Close=Ctrl+W; Ctrl+Esc
 ConfigureNotifications=
 ConfigureToolbars=
-Copy=Ctrl+Ins; Ctrl+C
+Copy=Ctrl+C; Ctrl+Ins
 CreateFolder=F10
-Cut=Shift+Del; Ctrl+X
+Cut=Ctrl+X; Shift+Del
 DeleteFile=Shift+Del
 DeleteWordBack=Ctrl+Backspace
 DeleteWordForward=Ctrl+Del
@@ -94,11 +98,83 @@ Zoom=
 ZoomIn=Ctrl++; Ctrl+=
 ZoomOut=Ctrl+-
 
+[UpdateInTerminal.desktop][Global Shortcuts]
+_launch=
+
+[VS Code.desktop][Global Shortcuts]
+_launch=
+
 [alacritty.desktop][Global Shortcuts]
 _launch=Meta+Ctrl+N
 
+[assistant.desktop][Global Shortcuts]
+_launch=
+
+[avahi-discover.desktop][Global Shortcuts]
+_launch=
+
+[bssh.desktop][Global Shortcuts]
+_launch=
+
+[btop.desktop][Global Shortcuts]
+_launch=
+
+[bvnc.desktop][Global Shortcuts]
+_launch=
+
+[chromium.desktop][Global Shortcuts]
+_launch=
+new-private-window=
+new-window=
+
+[cmake-gui.desktop][Global Shortcuts]
+_launch=
+
+[code.desktop][Global Shortcuts]
+_launch=
+new-empty-window=
+
+[com.obsproject.Studio.desktop][Global Shortcuts]
+_launch=
+
+[designer.desktop][Global Shortcuts]
+_launch=
+
+[discord.desktop][Global Shortcuts]
+_launch=
+
+[droidcam.desktop][Global Shortcuts]
+_launch=
+
+[eos-apps-info.desktop][Global Shortcuts]
+_launch=
+
+[eos-log-tool.desktop][Global Shortcuts]
+_launch=
+
+[eos-quickstart.desktop][Global Shortcuts]
+_launch=
+
+[firefox.desktop][Global Shortcuts]
+_launch=
+new-private-window=
+new-window=
+profile-manager-window=
+
+[firewall-config.desktop][Global Shortcuts]
+_launch=
+
+[fish.desktop][Global Shortcuts]
+_launch=
+
 [flameshot.desktop][Global Shortcuts]
 _launch=Meta+S
+
+[gimp.desktop][Global Shortcuts]
+_launch=
+
+[indicator-stickynotes.desktop][Global Shortcuts]
+_launch=
 
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
@@ -110,7 +186,7 @@ Toggle Touchpad=Touchpad Toggle
 
 [kded5][Global Shortcuts]
 Show System Activity=Ctrl+Esc
-display=Display; Meta+P
+display=Meta+P; Display
 
 [khotkeys][Global Shortcuts]
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=
@@ -123,6 +199,15 @@ increase_volume=Volume Up
 mic_mute=Microphone Mute; Meta+Volume Mute
 mute=Volume Mute
 
+[knotes][Global Shortcuts]
+hide_all_notes=Alt+Shift+H
+new_note=Alt+Shift+N
+new_note_clipboard=Alt+Shift+C
+show_all_notes=Alt+Shift+S
+
+[krunker.desktop][Global Shortcuts]
+_launch=
+
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=
 Lock Session=Screensaver
@@ -130,12 +215,15 @@ Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=
 Reboot Without Confirmation=
 
+[kvantummanager.desktop][Global Shortcuts]
+_launch=
+
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=Meta+Ctrl+A
 Decrease Opacity=
 Edit Tiles=Meta+T
 Expose=Ctrl+F9
-ExposeAll=Meta+W; Ctrl+F10; Launch (C)
+ExposeAll=Ctrl+F10; Meta+W; Launch (C)
 ExposeClass=Ctrl+F7
 ExposeClassCurrentDesktop=
 Increase Opacity=
@@ -159,7 +247,7 @@ Switch Window Down=Meta+Alt+Down; Meta+J
 Switch Window Left=Meta+H; Meta+Alt+Left
 Switch Window Right=Meta+Alt+Right; Meta+L
 Switch Window Up=Meta+K; Meta+Alt+Up
-Switch to Desktop 1=Ctrl+F1; Meta+1
+Switch to Desktop 1=Meta+1; Ctrl+F1
 Switch to Desktop 10=
 Switch to Desktop 11=
 Switch to Desktop 12=
@@ -170,10 +258,10 @@ Switch to Desktop 16=
 Switch to Desktop 17=
 Switch to Desktop 18=
 Switch to Desktop 19=
-Switch to Desktop 2=Ctrl+F2; Meta+2
+Switch to Desktop 2=Meta+2; Ctrl+F2
 Switch to Desktop 20=
 Switch to Desktop 3=Ctrl+F3; Meta+3
-Switch to Desktop 4=Meta+4; Ctrl+F4
+Switch to Desktop 4=Ctrl+F4; Meta+4
 Switch to Desktop 5=Meta+5
 Switch to Desktop 6=
 Switch to Desktop 7=
@@ -242,7 +330,7 @@ Window Quick Tile Bottom Left=
 Window Quick Tile Bottom Right=
 Window Quick Tile Left=Meta+Shift+H
 Window Quick Tile Right=Meta+Shift+L
-Window Quick Tile Top=Meta+Up; Meta+Shift+K
+Window Quick Tile Top=Meta+Shift+K; Meta+Up
 Window Quick Tile Top Left=
 Window Quick Tile Top Right=
 Window Raise=
@@ -283,8 +371,57 @@ Window to Screen 5=
 Window to Screen 6=
 Window to Screen 7=
 view_actual_size=Meta+0
-view_zoom_in=Meta+=; Meta++
+view_zoom_in=Meta++; Meta+=
 view_zoom_out=Meta+-
+
+[lattedock][Global Shortcuts]
+activate entry 1=
+activate entry 10=
+activate entry 11=Meta+Z
+activate entry 12=Meta+X
+activate entry 13=Meta+C
+activate entry 14=
+activate entry 15=Meta+B
+activate entry 16=Meta+N
+activate entry 17=Meta+M
+activate entry 18=Meta+,
+activate entry 19=
+activate entry 2=
+activate entry 3=
+activate entry 4=
+activate entry 5=
+activate entry 6=
+activate entry 7=
+activate entry 8=
+activate entry 9=
+new instance for entry 1=Meta+Ctrl+1
+new instance for entry 10=Meta+Ctrl+0
+new instance for entry 11=Meta+Ctrl+Z
+new instance for entry 12=
+new instance for entry 13=Meta+Ctrl+C
+new instance for entry 14=Meta+Ctrl+V
+new instance for entry 15=Meta+Ctrl+B
+new instance for entry 16=
+new instance for entry 17=Meta+Ctrl+M
+new instance for entry 18=Meta+Ctrl+,
+new instance for entry 19=Meta+Ctrl+.
+new instance for entry 2=Meta+Ctrl+2
+new instance for entry 3=Meta+Ctrl+3
+new instance for entry 4=Meta+Ctrl+4
+new instance for entry 5=Meta+Ctrl+5
+new instance for entry 6=Meta+Ctrl+6
+new instance for entry 7=Meta+Ctrl+7
+new instance for entry 8=Meta+Ctrl+8
+new instance for entry 9=Meta+Ctrl+9
+show latte global settings=
+show latte view=Meta+`
+show view settings=Meta+A
+
+[linguist.desktop][Global Shortcuts]
+_launch=
+
+[lstopo.desktop][Global Shortcuts]
+_launch=
 
 [mediacontrol][Global Shortcuts]
 mediavolumedown=
@@ -296,11 +433,62 @@ playpausemedia=Media Play
 previousmedia=Media Previous
 stopmedia=Media Stop
 
+[mongodb-compass.desktop][Global Shortcuts]
+_launch=
+
+[mpv.desktop][Global Shortcuts]
+_launch=
+
+[nvim.desktop][Global Shortcuts]
+_launch=
+
+[onlyoffice-desktopeditors.desktop][Global Shortcuts]
+NewDocument=
+NewPresentation=
+NewSpreadsheet=
+_launch=
+
+[org.flameshot.Flameshot.desktop][Global Shortcuts]
+Capture=
+Configure=
+Launcher=
+_launch=
+
+[org.gnome.Meld.desktop][Global Shortcuts]
+_launch=
+
+[org.gnome.SoundRecorder.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.ark.desktop][Global Shortcuts]
+_launch=
+
 [org.kde.dolphin.desktop][Global Shortcuts]
 _launch=Meta+E
 
+[org.kde.gwenview.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kate.desktop][Global Shortcuts]
+_launch=
+
 [org.kde.kcalc.desktop][Global Shortcuts]
 _launch=Launch (1)
+
+[org.kde.kdeconnect.app.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kdeconnect.sms.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kdeconnect_open.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kinfocenter.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kmenuedit.desktop][Global Shortcuts]
+_launch=
 
 [org.kde.konsole.desktop][Global Shortcuts]
 NewTab=
@@ -311,8 +499,17 @@ _launch=Ctrl+Alt+T
 RunClipboard=Alt+Shift+F2
 _launch=Ctrl+Space
 
+[org.kde.kuserfeedback-console.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.kwrite.desktop][Global Shortcuts]
+_launch=
+
+[org.kde.okular.desktop][Global Shortcuts]
+_launch=
+
 [org.kde.plasma.emojier.desktop][Global Shortcuts]
-_launch=Meta+Ctrl+Alt+Shift+Space; Meta+.
+_launch=Meta+.; Meta+Ctrl+Alt+Shift+Space
 
 [org.kde.spectacle.desktop][Global Shortcuts]
 ActiveWindowScreenShot=Meta+Print
@@ -322,6 +519,9 @@ OpenWithoutScreenshot=
 RectangularRegionScreenShot=Meta+Shift+Print
 WindowUnderCursorScreenShot=Meta+Ctrl+Print
 _launch=Print
+
+[org.qbittorrent.qBittorrent.desktop][Global Shortcuts]
+_launch=
 
 [org_kde_powerdevil][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
@@ -335,6 +535,9 @@ Sleep=Sleep
 Toggle Keyboard Backlight=Keyboard Light On/Off
 Turn Off Screen=
 
+[pavucontrol.desktop][Global Shortcuts]
+_launch=
+
 [plasmashell][Global Shortcuts]
 activate task manager entry 1=
 activate task manager entry 10=
@@ -346,7 +549,6 @@ activate task manager entry 6=Meta+6
 activate task manager entry 7=Meta+7
 activate task manager entry 8=Meta+8
 activate task manager entry 9=Meta+9
-activate widget 3=Alt+F1
 clear-history=
 clipboard_action=Meta+Ctrl+X
 cycle-panels=Meta+Alt+P
@@ -365,6 +567,33 @@ switch to next activity=
 switch to previous activity=
 toggle do not disturb=
 
+[postman.desktop][Global Shortcuts]
+_launch=
+
+[qdbusviewer.desktop][Global Shortcuts]
+_launch=
+
+[qv4l2.desktop][Global Shortcuts]
+_launch=
+
+[qvidcap.desktop][Global Shortcuts]
+_launch=
+
+[ranger.desktop][Global Shortcuts]
+_launch=
+
+[reflector-simple.desktop][Global Shortcuts]
+_launch=
+
+[screenkey.desktop][Global Shortcuts]
+_launch=
+
+[stoken-gui-small.desktop][Global Shortcuts]
+_launch=
+
+[stoken-gui.desktop][Global Shortcuts]
+_launch=
+
 [systemsettings.desktop][Global Shortcuts]
 _launch=Tools
 kcm-kscreen=
@@ -372,3 +601,24 @@ kcm-lookandfeel=
 kcm-users=
 powerdevilprofilesconfig=
 screenlocker=
+
+[typora.desktop][Global Shortcuts]
+_launch=
+
+[uxterm.desktop][Global Shortcuts]
+_launch=
+
+[vlc.desktop][Global Shortcuts]
+_launch=
+
+[welcome.desktop][Global Shortcuts]
+_launch=
+
+[xterm.desktop][Global Shortcuts]
+_launch=
+
+[yad-icon-browser.desktop][Global Shortcuts]
+_launch=
+
+[yad-settings.desktop][Global Shortcuts]
+_launch=

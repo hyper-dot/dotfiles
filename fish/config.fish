@@ -6,11 +6,11 @@ if status is-interactive
     export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
 
-    alias speak='sh -c "gtts-cli -l de \"$argv\" | mpv - > /dev/null 2>&1"'
-
     # Backup shortcut
     alias bku='bash ~/Public/dotfiles/backup.sh'
-    
+   
+    alias cat="bat"
+
     #Navigating files and dir
     alias ls='exa --icons'
     alias la='exa --icons -a'
