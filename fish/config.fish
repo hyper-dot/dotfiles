@@ -6,6 +6,11 @@ if status is-interactive
     export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
 
+    #Setting the editor variable
+    set -x EDITOR /usr/bin/nvim
+    set -x VISUAL /usr/bin/nvim
+    
+
     # Backup shortcut
     alias bku='bash ~/Public/dotfiles/backup.sh'
    

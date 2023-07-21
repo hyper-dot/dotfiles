@@ -4273,10 +4273,10 @@ vout=any
 #rt-offset=0
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
-loop=1
+#loop=0
 
 # Repeat current item (boolean)
 #repeat=0
