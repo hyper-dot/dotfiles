@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SESSION_NAME="my_session"  # Replace "my_session" with your desired session name
+
+# Check if the tmux session with the specified name exists
+tmux has-session -t "$SESSION_NAME" 2>/dev/null
+
+# $? contains the exit status of the last command (0 if session exists, 1 if it doesn't)
+if [ $? -eq 0 ]; then
+  # If the session exists, attach to it
+  tmux attach-session -t "$SESSION_NAME"
+else
+  # If the session doesn't exist, create a new one and attach to it
+  tmux new-session -s "$SESSION_NAME"
+fi
