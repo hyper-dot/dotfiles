@@ -3,6 +3,7 @@ import:
 
 window:
   title: Alacritty
+  startup_mode: Maximized
   dynamic_title: false
   padding:
     x: 0
@@ -29,14 +30,28 @@ font:
   bold_italic:
     family: JetBrains Mono Nerd Font
     style: BoldItalic
-  size: 11
+  size:
+    11
+    # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: -1
+    y: -1
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
 draw_bold_text_with_bright_colors: true
 
 selection:
   save_to_clipboard: false
 
 shell:
-  program: /bin/fish
+  program: /bin/open-tmux
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
