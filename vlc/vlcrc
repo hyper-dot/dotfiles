@@ -2057,6 +2057,11 @@
 # Musicbrainz Server (string)
 #musicbrainz-server=musicbrainz.org
 
+[dvdread] # DVDRead Input (no menu support)
+
+# DVD angle (integer)
+#dvdread-angle=1
+
 [dvb] # DVB input with v4l2 support
 
 # Probe DVB card for capabilities (boolean)
@@ -3320,7 +3325,7 @@
 [qt] # Qt interface
 
 # Start in minimal view (without menus) (boolean)
-#qt-minimal-view=0
+qt-minimal-view=1
 
 # Systray icon (boolean)
 #qt-system-tray=1
@@ -4245,13 +4250,13 @@ metadata-network-access=1
 #global-key-jump-short=
 
 # Short backwards jump (string)
-#key-jump-short=Alt+Left
+key-jump-short=h
 
 # Short forward jump (string)
 #global-key-jump+short=
 
 # Short forward jump (string)
-#key-jump+short=Alt+Right
+key-jump+short=l
 
 # Medium backwards jump (string)
 #global-key-jump-medium=
@@ -4353,13 +4358,13 @@ metadata-network-access=1
 #global-key-vol-up=
 
 # Volume up (string)
-#key-vol-up=Ctrl+Up	Volume Up
+key-vol-up=k
 
 # Volume down (string)
 #global-key-vol-down=
 
 # Volume down (string)
-#key-vol-down=Ctrl+Down	Volume Down
+key-vol-down=j
 
 # Mute (string)
 #global-key-vol-mute=
@@ -4371,7 +4376,7 @@ metadata-network-access=1
 #global-key-subdelay-up=
 
 # Subtitle delay up (string)
-#key-subdelay-up=h
+key-subdelay-up=
 
 # Subtitle delay down (string)
 #global-key-subdelay-down=
@@ -4419,13 +4424,13 @@ metadata-network-access=1
 #global-key-audiodelay-up=
 
 # Audio delay up (string)
-#key-audiodelay-up=k
+key-audiodelay-up=
 
 # Audio delay down (string)
 #global-key-audiodelay-down=
 
 # Audio delay down (string)
-#key-audiodelay-down=j
+key-audiodelay-down=
 
 # Cycle audio track (string)
 #global-key-audio-track=
@@ -4617,7 +4622,7 @@ metadata-network-access=1
 #global-key-loop=
 
 # Normal/Loop/Repeat (string)
-#key-loop=l
+key-loop=
 
 # Shrink the viewpoint field of view (360°) (string)
 #global-key-viewpoint-fov-in=

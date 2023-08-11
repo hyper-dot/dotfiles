@@ -6,7 +6,7 @@ window:
   startup_mode: Maximized
   dynamic_title: false
   padding:
-    x: 0
+    x: 10
     y: 0
   class:
     instance: Alacritty
@@ -51,7 +51,7 @@ selection:
   save_to_clipboard: false
 
 shell:
-  program: /bin/open-tmux
+  program: /home/linux/.local/bin/open-tmux
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }

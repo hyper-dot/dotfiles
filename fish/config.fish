@@ -3,7 +3,7 @@ if status is-interactive
     export PATH="/home/linux/.local/bin:$PATH" # local binaries
     export PATH="/home/linux/.detaspace/bin:$PATH" # dataspace binary
     export PATH="/home/linux/.yarn/bin/:$PATH" # yarn global binaries
-    export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
+    export PATH="/home/linux/.npm-packages/bin/:$PATH" #npm global binaries
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
 
     #Setting the editor variable
