@@ -1,3 +1,8 @@
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+color=#30fff8  # Bright blue
+
 [brightness]
 command=sh ~/.config/i3blocks/brightness
 interval=1
@@ -9,18 +14,10 @@ interval=1
 color=#dfff40  # Bright green
 separator_block_width=20 
 
-[time]
-command=date '+%Y-%m-%d %H:%M:%S'
-interval=1
-color=#30fff8  # Bright blue
 
-[cpu]
-command=echo " $(top -bn 1 | grep 'Cpu(s)' | sed 's/.*, *\([0-9.]*\)%* id.*/\1/')%"
-interval=5
-color=#ffa530  # Bright orange
-
-[memory]
-command=free -h | awk '/^Mem/ {print " " $3 }'
+[battery]
+command=sh ~/.config/i3blocks/battery
 interval=10
-color=#59ff4a  # Bright green
+markup=pango
+
 
