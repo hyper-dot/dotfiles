@@ -4,11 +4,22 @@ if status is-interactive
     export PATH="/home/linux/.detaspace/bin:$PATH" # dataspace binary
     export PATH="/home/linux/.yarn/bin/:$PATH" # yarn global binaries
     export PATH="/home/linux/.npm-packages/bin/:$PATH" #npm global binaries
+    export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
     export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
+
 
     #Setting the editor variable
     set -x EDITOR /usr/bin/nvim
     set -x VISUAL /usr/bin/nvim
+    set BROWSER /bin/google-chrome-stable
+
+    # ANDROID
+    export ANDROID_HOME="/opt/android-sdk"
+    export PATH="$ANDROID_HOME/tools:$PATH"
+    export PATH="$ANDROID_HOME/platform-tools/:$PATH"
+
+    # Hugo 
+    alias hs='hugo server --noHTTPCache -D'
     
 
     # Backup shortcut
@@ -47,7 +58,8 @@ if status is-interactive
     alias fh="find ~/ -name $1" 
 
     # Git and github
-    alias gl="git log --oneline --abbrev-commit --all --graph --decorate --color --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr)'"
+    alias gla="git log --oneline --abbrev-commit --all --graph --decorate --color --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr)'"
+    alias gl="git log --oneline --decorate --date=short"
     alias gs='git status -sb'
     #Adding Git
     alias ga="git add ."
@@ -74,3 +86,10 @@ if status is-interactive
     alias fic='lvim ~/.config/fish/config.fish'
     
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/linux/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

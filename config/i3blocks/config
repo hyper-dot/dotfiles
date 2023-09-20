@@ -14,10 +14,8 @@ interval=1
 color=#dfff40  # Bright green
 separator_block_width=20 
 
-
 [battery]
 command=sh ~/.config/i3blocks/battery
 interval=10
 markup=pango
-
 
