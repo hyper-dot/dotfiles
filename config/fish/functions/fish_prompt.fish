@@ -68,7 +68,7 @@ function fish_prompt
         set arrow_color "$red"
     end
 
-    set -l arrow "$arrow_color"
+    set -l arrow "$arrow_color"
     if fish_is_root_user
         set arrow "$arrow_color# "
     end
@@ -76,11 +76,11 @@ function fish_prompt
     set -l cwd $cyan(basename (prompt_pwd))
 
     if test "$PWD" = "$HOME"
-        set cwd "  "
+        set cwd "HOME"
     end
 
     if test "$PWD" = "$HOME/startuphire-turbo"
-        set cwd "WORK "
+        set cwd "WORK"
     end
 
 
