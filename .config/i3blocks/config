@@ -1,0 +1,48 @@
+[wlan_status]
+command=sh /home/linux/.config/i3blocks/wlan
+interval=2  # Adjust the interval as needed
+markup=pango
+
+[cpu_usage]
+label=<span color='#00FF00'>CPU</span> 
+markup=pango
+command=~/.config/i3/scripts/cpu_usage
+#min_width=CPU: 100.00%
+color=#FFFF00
+color_good=#00FF00
+interval=2
+
+[ram_usage]
+label=<span color='#26f4ff'>MEM</span> 
+command=~/.config/i3blocks/memory
+interval=5
+markup=pango
+
+[brightness]
+command=sh ~/.config/i3blocks/brightness
+interval=1
+color=#EBCB8B  # Bright yellow
+markup=pango
+
+[volume]
+label=<span color='#00FF00'>VOL</span> 
+command=sh ~/.config/i3blocks/volume
+interval=1
+color=#dfff40  # Bright green
+separator_block_width=20 
+markup=pango
+
+[battery]
+command=sh ~/.config/i3blocks/battery
+interval=10
+markup=pango
+
+
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=10
+color=#30fff8  # Bright blue
+
+
+
+

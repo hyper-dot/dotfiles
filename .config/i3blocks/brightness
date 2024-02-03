@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get current brightness value
+current_brightness=$(brightnessctl g)
+
+# Get maximum brightness value
+max_brightness=$(brightnessctl m)
+
+# Calculate the brightness percentage
+brightness_percentage=$((current_brightness * 100 / max_brightness))
+
+# Output the formatted brightness value
+echo "<span color='#deff26'>BRI</span> $brightness_percentage%"

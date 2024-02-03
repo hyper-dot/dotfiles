@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+available=$(free -h | awk '/^Mem:/ {print $3 }')
+echo $available
+

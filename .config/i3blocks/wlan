@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get WLAN information
+ssid=$(iw dev wlan0 info | grep ssid | awk '{print $2}')  # Get SSID
+ip_address=$(ip addr show dev wlan0 | awk '/inet / {print $2}' | cut -d'/' -f1)  # Get IP address
+status=""
+color=""
+
+# Check if WLAN is connected
+if [ -n "$ssid" ]; then
+    status="<span color='#00FF00'>WLAN:</span> <span><span color='#fff536'>[</span>$ssid<span color='#fff536'>]</span></span> - <span color='#ff4ad5'>$ip_address</span>"
+else
+    status="<span color='#ff3333'>NO_CONNECTION</span>"
+fi
+
+# Print the status and color in Pango format
+echo -e "$status\n$color"

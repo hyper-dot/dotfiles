@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Get battery status and percentage
+battery_info=$(acpi -b)
+battery_status=$(echo "$battery_info" | awk '{print $3}')
+battery_percentage=$(echo "$battery_info" | awk -F, '{print $2}' | tr -d '%')
+
+# Determine the battery icon based on the status
+if [ "$battery_status" == "Discharging," ]; then
+    battery_icon="BAT"
+    color="#FFFFFF"  # White color while discharging
+elif [ "$battery_status" == "Charging," ]; then
+    battery_icon="CHR"
+    color="#00FF00"  # Green color while charging
+else
+    battery_icon="BAT"
+    battery_icon="<span><span color='#52fff3'>[</span>Full<span color='#52fff3'>]</span></span>"
+    color="#ff52dc"  # Default color
+fi
+
+# Output the battery icon and percentage with appropriate color
+echo "<span foreground='$color'>$battery_icon<span color='#00FF00'>$battery_percentage%</span></span>"
