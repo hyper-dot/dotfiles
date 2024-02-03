@@ -339,7 +339,7 @@ bar {
 	}
 
     tray_output primary
-    tray_padding 1
+    tray_padding 2
     separator_symbol " | "
     height 18
     font pango:JetBrainsMonoNL Nerd Font SemiBold 8
