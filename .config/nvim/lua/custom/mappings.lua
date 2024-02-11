@@ -19,7 +19,7 @@ M.general = {
     ["<leader>h"] = { "<cmd>:nohl<CR>", "Remove Search Highlight" },
     ["<leader>d"] = {
       function()
-        vim.diagnostic.open_float { border = "rounded" }
+        vim.diagnostic.open_float({ border = "rounded" })
       end,
       "Floating diagnostic",
     },
@@ -34,6 +34,7 @@ M.nvimtree = {
 
   n = {
     ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+    ["<leader>fr"] = { "<cmd> Telescope oldfiles <CR>", "Open old files" },
   },
 }
 

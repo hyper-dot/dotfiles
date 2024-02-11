@@ -21,10 +21,6 @@ if status is-interactive
     # Hugo 
     alias hs='hugo server --noHTTPCache -D'
     
-
-    # Backup shortcut
-    alias bku='bash ~/Public/dotfiles/backup.sh'
-   
     # alias cat="bat"
 
     #Navigating files and dir
@@ -79,7 +75,7 @@ if status is-interactive
     alias rm='rm -i'
     
     ## Don't DELETE! Put it in the Trash, so I can restore later.
-    alias trash='mv --force -t ~/.local/share/Trash '
+    alias rm='mv --force -t ~/.local/share/Trash/files'
 
     # Open diffrent config files in lunarvim
     alias hl='lvim ~/.config/hypr/hyprland.conf'

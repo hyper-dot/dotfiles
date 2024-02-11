@@ -9,8 +9,8 @@ fi
 filename="$1"
 
 # Check if the provided file exists
-if [ ! -f "$filename.cpp" ]; then
-  echo "File not found: $filename.cpp"
+if [ ! -f "$filename.c" ]; then
+  echo "File not found: $filename.c"
   exit 1
 fi
 
