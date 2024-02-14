@@ -72,10 +72,10 @@ if status is-interactive
     ## Confirm before I overwrite something.
     alias cp='cp -i'
     alias mv='mv -i'
-    alias rm='rm -i'
+    # alias rm='rm -I'
     
     ## Don't DELETE! Put it in the Trash, so I can restore later.
-    alias rm='mv --force -t ~/.local/share/Trash/files'
+    alias rm='trash-put'
 
     # Open diffrent config files in lunarvim
     alias hl='lvim ~/.config/hypr/hyprland.conf'
