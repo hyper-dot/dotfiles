@@ -93,5 +93,15 @@ local plugins = {
 			{ "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste clipboard image" },
 		},
 	},
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		build = "cd app && pnpm install",
+		init = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+			vim.g.mkdp_browder = "firefox"
+		end,
+		ft = { "markdown" },
+	},
 }
 return plugins
