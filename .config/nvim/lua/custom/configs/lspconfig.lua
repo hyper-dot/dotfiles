@@ -1,25 +1,26 @@
-local base = require "plugins.configs.lspconfig"
+local base = require("plugins.configs.lspconfig")
 local on_attach = base.on_attach
 local capabilities = base.capabilities
 
-local lspconfig = require "lspconfig"
+local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup {
+lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-}
+})
 
-lspconfig.tailwindcss.setup {
+lspconfig.tailwindcss.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-}
+})
 
-lspconfig.emmet_ls.setup {
+lspconfig.emmet_ls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-}
+})
 
-lspconfig.cssls.setup {
+lspconfig.cssls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-}
+})
+vim.diagnostic.config({ virtual_text = false })
