@@ -35,6 +35,7 @@ M.nvimtree = {
   n = {
     ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
     ["<leader>fr"] = { "<cmd> Telescope oldfiles <CR>", "Open old files" },
+    ["<leader>da"] = { "<cmd> Telescope diagnostics<CR>", "Open old files" },
   },
 }
 
