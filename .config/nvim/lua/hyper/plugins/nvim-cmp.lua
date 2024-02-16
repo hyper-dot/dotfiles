@@ -18,11 +18,32 @@ return {
 
 		-- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
 		require("luasnip.loaders.from_vscode").lazy_load()
+		local function border(hl_name)
+			return {
+				{ "╭", hl_name },
+				{ "─", hl_name },
+				{ "╮", hl_name },
+				{ "│", hl_name },
+				{ "╯", hl_name },
+				{ "─", hl_name },
+				{ "╰", hl_name },
+				{ "│", hl_name },
+			}
+		end
 
 		cmp.setup({
-			-- completion = {
-			--   completeopt = "menu,menuone,preview,noselect",
-			-- },
+			window = {
+				completion = {
+					scrollbar = false,
+					winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+					col_offset = 0,
+					side_padding = 4,
+					border = border("CmpBorder"),
+					documentation = {
+						border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+					},
+				},
+			},
 			snippet = { -- configure how nvim-cmp interacts with snippet engine
 				expand = function(args)
 					luasnip.lsp_expand(args.body)
@@ -46,10 +67,17 @@ return {
 			}),
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
-				format = lspkind.cmp_format({
-					maxwidth = 50,
-					ellipsis_char = "...",
-				}),
+				-- format = lspkind.cmp_format({
+				-- 	maxwidth = 50,
+				-- 	ellipsis_char = "...",
+				-- }),
+				format = function(entry, vim_item)
+					local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+					local strings = vim.split(kind.kind, "%s", { trimempty = true })
+					kind.kind = " " .. (strings[1] or "") .. " "
+					kind.menu = "    (" .. (strings[2] or "") .. ")"
+					return kind
+				end,
 			},
 		})
 	end,

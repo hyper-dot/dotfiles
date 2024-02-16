@@ -1,7 +1,15 @@
 local opt = vim.opt -- for conciseness
 
 -- Disable diagnostic header and virtual text
-vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({ virtual_text = false, float = { border = "rounded" } })
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = "single",
+})
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+	border = "single",
+	focusable = false,
+	relative = "cursor",
+})
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
