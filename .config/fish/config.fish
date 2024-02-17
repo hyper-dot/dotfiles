@@ -75,7 +75,7 @@ if status is-interactive
     # alias rm='rm -I'
     
     ## Don't DELETE! Put it in the Trash, so I can restore later.
-    ##alias rm='mv --force -t ~/.local/share/Trash/files'
+    alias rm='trash'
 
     # Open diffrent config files in lunarvim
     alias hl='lvim ~/.config/hypr/hyprland.conf'
