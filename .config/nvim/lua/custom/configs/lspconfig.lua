@@ -23,4 +23,20 @@ lspconfig.cssls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
+-- =================Golang=====================
+lspconfig.gopls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "gopls" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  settings = {
+    completeUnimported = true,
+    usePlaceholders = true,
+    analyses = {
+      unusedparms = true,
+    },
+  },
+})
+
 vim.diagnostic.config({ virtual_text = false })
