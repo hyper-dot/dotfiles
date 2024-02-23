@@ -8,7 +8,7 @@ exec --no-startup-id  dunst
 exec --no-startup-id  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id  autotiling
 exec --no-startup-id  /home/linux/.local/bin/hugostart
-# exec --no-startup-id  qbittorrent
+exec --no-startup-id  qbittorrent
 exec --no-startup-id  xfce4-power-manager
 exec --no-startup-id $HOME/.local/bin/autobackup 
 exec --no-startup-id greenclip daemon>/dev/null
