@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 cd $HOME/my-notes/new_notes/
-exec nvim
+
+exec glow  
