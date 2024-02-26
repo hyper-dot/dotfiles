@@ -24,6 +24,20 @@ lspconfig.cssls.setup({
   capabilities = capabilities,
 })
 
+lspconfig.cssls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
+lspconfig.clangd.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
+})
+
 -- =================Golang=====================
 lspconfig.gopls.setup({
   on_attach = on_attach,
