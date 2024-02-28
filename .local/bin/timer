@@ -1,0 +1,22 @@
+#!/bin/bash
+
+timer() {
+    total_seconds=$(( $1 * 3600 + $2 * 60 + $3 ))
+    remaining_seconds=$total_seconds
+    while [ $remaining_seconds -gt 0 ]; do
+        hours=$(( remaining_seconds / 3600 ))
+        minutes=$(( (remaining_seconds % 3600) / 60 ))
+        seconds=$(( remaining_seconds % 60 ))
+        printf "\r%02d:%02d:%02d remaining" "$hours" "$minutes" "$seconds"
+        sleep 1
+        ((remaining_seconds--))
+    done
+    printf "\nTimer ended\n"
+}
+
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <hours> <minutes> <seconds>"
+    exit 1
+fi
+
+timer "$1" "$2" "$3"
