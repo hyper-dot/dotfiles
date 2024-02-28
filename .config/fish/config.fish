@@ -93,3 +93,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[ -f /home/linux/.local/share/pnpm/store/v3/tmp/dlx-507110/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.fish ]; and . /home/linux/.local/share/pnpm/store/v3/tmp/dlx-507110/node_modules/.pnpm/tabtab@2.2.2/node_modules/tabtab/.completions/electron-forge.fish
