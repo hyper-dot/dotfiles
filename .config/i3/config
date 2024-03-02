@@ -4,6 +4,7 @@
 
 exec --no-startup-id  nitrogen --restore
 exec --no-startup-id  picom
+exec --no-startup-id  obsidian
 exec --no-startup-id  dunst
 exec --no-startup-id  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id  autotiling
@@ -378,5 +379,4 @@ for_window [class=Thunderbird] focus
 for_window [class=Code] focus
 
 # Opens obsidian and move it to scratchpad and focus it
-for_window [class=obsidian] focus
 for_window [class=obsidian], move scratchpad
