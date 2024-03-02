@@ -376,4 +376,7 @@ for_window [class=Thunar] focus
 for_window [class=Brave-browser] focus
 for_window [class=Thunderbird] focus
 for_window [class=Code] focus
-for_window [class=vlc] focus
+
+# Opens obsidian and move it to scratchpad and focus it
+for_window [class=obsidian] focus
+for_window [class=obsidian], move scratchpad
