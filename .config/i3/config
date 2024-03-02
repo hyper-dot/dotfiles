@@ -86,10 +86,6 @@ bindsym $mod+m exec --no-startup-id alacritty -t takenote -e ~/.local/bin/custom
 bindsym $mod+s exec --no-startup-id flameshot gui
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
-# Disable floating in scratchpad
-for_window [instance="obsidian"] floating disable
-
-
 
 ################################################
 ########### Application Shortcuts ##############    
@@ -242,6 +238,7 @@ for_window [window_role="About"] floating enable
 for_window [title="takenote"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="Firewall-config"] floating enable
+for_window [class="obsidian"] floating enable
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
