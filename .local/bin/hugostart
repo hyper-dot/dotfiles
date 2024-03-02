@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cd $HOME/my-notes
-
-exec hugo server -D --noHTTPCache

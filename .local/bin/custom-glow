@@ -1,5 +1,0 @@
-#!/bin/sh
-
-cd $HOME/my-notes/content/
-
-exec glow  

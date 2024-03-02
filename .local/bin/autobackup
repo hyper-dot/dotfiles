@@ -2,6 +2,6 @@
 
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
-cd $HOME/my-notes/ && git add . && git commit -m "AUTO COMMIT $timestamp" && git push
+cd $HOME/notes/ && git add . && git commit -m "AUTO COMMIT $timestamp" && git push
 
 cd $HOME/dotfiles && git add . && git commit -m "AUTO COMMIT $timestamp" && git push
