@@ -24,9 +24,9 @@ M.general = {
       "Floating diagnostic",
     },
   },
-  -- i = {
-  --   ["jj"] = { "<ESC>", "escape insert mode", opts = { nowait = true } },
-  -- },
+  i = {
+    ["jj"] = { "<ESC>", "escape insert mode", opts = { nowait = true } },
+  },
 }
 
 M.nvimtree = {
