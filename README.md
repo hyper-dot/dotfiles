@@ -1,5 +1,3 @@
-# These are the dotfiles that fits my muscle memory.
-
 > Note for future myself:
 
 1. **Step 1 :**

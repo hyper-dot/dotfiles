@@ -105,12 +105,13 @@ alias nv="nvim"
 alias ga="git add ."
 
 # PATHS
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/nvim/bin:$PATH
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH=/opt/homebrew/bin:$PATH # Homebrew Path
+export PATH=/opt/nvim/bin:$PATH # Neovim Path
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # Vscode Path
+export PATH=/usr/local/mysql/bin/:$PATH # Mysql Path
 
 # pnpm
-export PNPM_HOME="/Users/roshan/Library/pnpm"
+export PNPM_HOME="/Users/roshanpaudel/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -123,12 +124,17 @@ esac
 
 # Git Commit, Add all and Push — in one step.
 gcap() {
-    git commit -m "$*" && git push
+    git commit -m "$*"
 }
 
 # NEW.
 gnew() {
-    gcap "📦 NEW: $@"
+    gcap "✨ NEW: $@"
+}
+
+# CHORE.
+gchore() {
+    gcap "🔧 CHORE: $@"
 }
 
 # IMPROVE.
@@ -138,7 +144,7 @@ gimp() {
 
 # FIX.
 gfix() {
-    gcap "🐛 FIX: $@"
+    gcap "🐞 FIX: $@"
 }
 
 # RELEASE.
@@ -179,44 +185,7 @@ $GREEN gbrk$NORMAL — ‼️ BREAKING"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
 
-# Animations false
-# defaults write -g NSScrollViewRubberbanding -int 0
-# defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
-# defaults write -g NSScrollAnimationEnabled -bool false
-# defaults write -g NSWindowResizeTime -float 0
-# defaults write -g QLPanelAnimationDuration -float 0
-# defaults write -g NSScrollViewRubberbanding -bool false
-# defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
-# defaults write -g NSToolbarFullScreenAnimationDuration -float 0
-# defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
-# defaults write com.apple.dock autohide-time-modifier -float 0
-# defaults write com.apple.dock autohide-delay -float 0
-# defaults write com.apple.dock expose-animation-duration -float 0
-# defaults write com.apple.dock springboard-show-duration -float 0
-# defaults write com.apple.dock springboard-hide-duration -float 0
-# defaults write com.apple.dock springboard-page-duration -float 0
-# defaults write com.apple.finder DisableAllAnimations -bool true
-# defaults write NSGlobalDomain NSWindowResizeTime .001
-# defaults write com.apple.dock expose-animation-duration -int 0.00001; killall Dock
-# defaults write com.apple.dock expose-animation-duration -float 0.00001; killall Dock
-
-# Restore to Default
-# defaults delete -g NSAutomaticWindowAnimationsEnabled
-# defaults delete -g NSScrollAnimationEnabled
-# defaults delete -g NSWindowResizeTime
-# defaults delete -g QLPanelAnimationDuration
-# defaults delete -g NSScrollViewRubberbanding
-# defaults delete -g NSDocumentRevisionsWindowTransformAnimation
-# defaults delete -g NSToolbarFullScreenAnimationDuration
-# defaults delete -g NSBrowserColumnAnimationSpeedMultiplier
-# defaults delete com.apple.dock autohide-time-modifier
-# defaults delete com.apple.dock autohide-delay
-# defaults delete com.apple.dock expose-animation-duration
-# defaults delete com.apple.dock springboard-show-duration
-# defaults delete com.apple.dock springboard-hide-duration
-# defaults delete com.apple.dock springboard-page-duration
-# defaults delete com.apple.finder DisableAllAnimations
-# defaults delete com.apple.Mail DisableSendAnimations
-# defaults delete com.apple.Mail DisableReplyAnimations
-
+export PATH="/Users/roshanpaudel/.detaspace/bin:$PATH"
