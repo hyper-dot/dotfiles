@@ -85,6 +85,8 @@ _open_files_for_editing() {
 # alias pacdiff=eos-pacdiff
 ################################################################################
 
+#HOMEBREW
+export PATH="/opt/homebrew/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/linux/.local/share/pnpm"
