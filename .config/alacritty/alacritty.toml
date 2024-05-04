@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/alacritty-theme/themes/catppuccin.toml"
+    "./alacritty-theme/themes/ayu_dark.toml"
 ]
 
 [ env ]
