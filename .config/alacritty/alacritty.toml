@@ -1,60 +1,23 @@
-import = ["/home/linux/.alacritty_themes/themes/ayu_dark.toml"]
+import = [
+    "~/.config/alacritty/alacritty-theme/themes/ayu_dark.toml"
+]
 
-[colors]
-draw_bold_text_with_bright_colors = true
-
-[font]
-size = 9
-
-[font.bold]
-family = "JetBrains Mono NL"
-style = "Bold"
-
-[font.bold_italic]
-family = "JetBrains Mono NL"
-style = "BoldItalic"
-
-[font.glyph_offset]
-x = 0
-y = 0
-
-[font.italic]
-family = "JetBrains Mono NL"
-style = "MediumItalic"
-
-[font.normal]
-family = "JetBrains Mono NL"
-style = "Normal"
-
-[font.offset]
-x = -1
-y = -1
-
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "Return"
-mods = "Super|Shift"
-
-[scrolling]
-history = 10000
-multiplier = 3
-
-[selection]
-save_to_clipboard = false
-
-[shell]
-program = "/bin/fish"
+[ env ]
+TERM = "xterm-256color"
 
 [window]
-dynamic_title = false
-opacity = 1
-startup_mode = "Maximized"
-title = "Alacritty"
+padding.x = 5
+padding.y = 5
+opacity=0.95
+blur=true
+startup_mode='Maximized'
 
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
 
-[window.padding]
-x = 10
-y = 5
+[font]
+normal.family = "JetBrainsMono NF"
+
+#regular
+size = 15
+
+#for video
+# size = 35.0
