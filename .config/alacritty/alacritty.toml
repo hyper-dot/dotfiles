@@ -6,9 +6,9 @@ import = [
 TERM = "xterm-256color"
 
 [window]
-padding.x = 5
-padding.y = 5
-opacity=0.95
+padding.x = 2
+padding.y = 2
+opacity=0.90
 blur=true
 startup_mode='Maximized'
 
