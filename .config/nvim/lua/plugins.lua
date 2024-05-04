@@ -39,6 +39,7 @@ require("lazy").setup({
 	"shatur/neovim-ayu", -- AYU
 	"projekt0n/github-nvim-theme", -- GITHUB
 	"ellisonleao/gruvbox.nvim",
+	"catppuccin/nvim",
 
 	-- Devicons
 	"nvim-tree/nvim-web-devicons",
