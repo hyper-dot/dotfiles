@@ -15,6 +15,7 @@ startup_mode='Maximized'
 
 [font]
 normal.family = "JetBrainsMono NF"
+offset.y = 2
 
 #regular
 size = 14
