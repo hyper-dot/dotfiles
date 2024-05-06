@@ -17,7 +17,7 @@ startup_mode='Maximized'
 normal.family = "JetBrainsMono NF"
 
 #regular
-size = 15
+size = 14
 
 #for video
 # size = 35.0

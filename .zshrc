@@ -28,6 +28,7 @@ ZSH_THEME="robbyrussell"
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
+
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
@@ -103,6 +104,11 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
 alias nv="nvim"
 alias ga="git add ."
+alias gs="git status"
+
+# PostgreSQL
+alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@16 start"
+alias pstop="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@16 stop"
 
 # PATHS
 export PATH=/opt/homebrew/bin:$PATH # Homebrew Path
@@ -189,3 +195,4 @@ LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
 export PATH="/Users/roshanpaudel/.detaspace/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"

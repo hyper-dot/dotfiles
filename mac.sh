@@ -1,12 +1,12 @@
 #!/bin/sh
 
-cp ./.zshrc ~/.zshrc 
-
-cp ./.bashrc ~/.bashrc
+# link bashrc and zshrc files
+ln -s ~/dotfiles/.zshrc ~/.zshrc 
+ln -s ~/dotfiles/.bashrc ~/.bashrc
 
 cd .config 
 
-# For alacritty
+# for alacritty
 mkdir ~/.config/alacritty 
 stow -t ~/.config/alacritty alacritty
 
