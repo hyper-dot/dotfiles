@@ -16,9 +16,9 @@ require("ayu").setup({
 
 require("vscode").setup({
 	-- Enable transparent background
-	transparent = true,
+	-- transparent = true,
 })
 
 vim.cmd([[
-  colorscheme ayu-dark
+  colorscheme vscode
 ]])
