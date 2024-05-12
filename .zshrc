@@ -103,8 +103,15 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
 alias nv="nvim"
+# Git and github
+alias gla="git log --oneline --abbrev-commit --all --graph --decorate --color --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr)'"
+alias gl="git log --oneline --decorate --date=short"
+alias gs='git status -sb'
+#Adding Git
 alias ga="git add ."
-alias gs="git status"
+alias lg="echo 'You Forgot. From now on only NATIV git'"
+alias gp="git push"
+# alias gm="git commit -m"
 
 # PostgreSQL
 alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@16 start"
