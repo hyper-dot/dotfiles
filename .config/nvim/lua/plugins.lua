@@ -70,7 +70,7 @@ require("lazy").setup({
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 		config = function()
-			require("lualine").setup()
+			require("lualine").setup({})
 		end,
 	},
 
@@ -149,10 +149,19 @@ require("lazy").setup({
 		end,
 		ft = { "markdown" },
 	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		event = { "BufReadPost", "BufNewFile" },
-	},
+{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {},
+    init = function ()
+    require("ibl").setup({
+      indent = {
+      char = "│",
+      },
+
+      -- char = "│",
+    --   filetype_exclude = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy", "mason" },
+    --   show_trailing_blankline_indent = false,
+    --   show_current_context = false,
+    })
+end },
 	{
 		"echasnovski/mini.indentscope",
 		version = false, -- wait till new 0.7.0 release to put it back on semver

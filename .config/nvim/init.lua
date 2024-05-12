@@ -22,7 +22,7 @@ require("plugin_configs.lsp.diagnostics")
 
 -- UI
 require("plugin_configs.ui.neotree")
-require("plugin_configs.ui.indent_blankline")
+-- require("plugin_configs.ui.indent")
 -- require("plugin_configs.ui.dashboard")
 require("plugin_configs.ui.colorizer")
 require("plugin_configs.ui.bufferline")
