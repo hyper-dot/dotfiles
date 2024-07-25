@@ -14,6 +14,9 @@ end
 -- configure telescope
 telescope.setup({
 	-- configure custom mappings
+    find_files = {
+        hidden = true
+    },
 	defaults = {
 		mappings = {
 			i = {

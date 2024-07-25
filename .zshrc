@@ -113,9 +113,12 @@ alias lg="echo 'You Forgot. From now on only NATIV git'"
 alias gp="git push"
 # alias gm="git commit -m"
 
+# GOLANG
+alias gr="nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run main.go"
+
 # PostgreSQL
-alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@16 start"
-alias pstop="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@16 stop"
+alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 start"
+alias pstop="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 stop"
 
 # PATHS
 export PATH=/opt/homebrew/bin:$PATH # Homebrew Path
@@ -138,6 +141,11 @@ esac
 # Git Commit, Add all and Push — in one step.
 gcap() {
     git commit -m "$*"
+}
+
+
+gfeat() {
+    gcap "✨ FEAT: $@"
 }
 
 # NEW.

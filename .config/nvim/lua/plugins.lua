@@ -44,8 +44,12 @@ require("lazy").setup({
 	},
 	{
 		"catppuccin/nvim",
+        config = function ()
+        require("catppuccin").setup({
+            bufferline = false,
+        })
+        end
 	},
-
 	-- Devicons
 	"nvim-tree/nvim-web-devicons",
 
@@ -126,6 +130,21 @@ require("lazy").setup({
 			require("Comment").setup()
 		end,
 	},
+    {
+      "folke/todo-comments.nvim",
+      dependencies = { "nvim-lua/plenary.nvim"},
+      opts = {
+        TODO = { icon = " ", color = "#ffffff" },
+      },
+        colors = {
+            error = { "DiagnosticError", "ErrorMsg", "#DC2626" },
+            warning = { "DiagnosticWarn", "WarningMsg", "#FBBF24" },
+            info = {"#86fce8" },
+            hint = { "DiagnosticHint", "#10B981" },
+            default = { "Identifier", "#7C3AED" },
+            test = { "Identifier", "#FF00FF" }
+          },
+    },
 	{
 		"kylechui/nvim-surround",
 		version = "*", -- Use for stability; omit to use `main` branch for the latest features
