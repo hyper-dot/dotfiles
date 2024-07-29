@@ -18,7 +18,7 @@ return {
       autotag = {
         enable = true
       },
-      ensure_installed = { "json", "javascript", "typescript", "yaml", "html", "css", "markdown", "bash", "lua", "vim", "dockerfile", "gitignore" },
+      ensure_installed = { "json", "javascript", "typescript", "yaml", "html", "css", "bash", "lua", "vim", "dockerfile", "gitignore" },
     })
   end
 }
