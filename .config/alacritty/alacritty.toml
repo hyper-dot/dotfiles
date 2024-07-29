@@ -1,14 +1,14 @@
 import = [
-    "~/dotfiles/.config/alacritty/alacritty-theme/themes/ayu_dark.toml"
+    "~/dotfiles/.config/alacritty/alacritty-theme/themes/catppuccin_mocha.toml"
 ]
 
 [ env ]
-TERM = "xterm-256color"
+# TERM = "xterm-256color"
 
 [window]
 padding.x = 2
 padding.y = 2
-opacity=0.90
+# opacity=0.90
 blur=true
 startup_mode='Maximized'
 
