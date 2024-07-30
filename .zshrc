@@ -110,8 +110,6 @@ alias gs='git status -sb'
 #Adding Git
 alias ga="git add ."
 alias lg="echo 'You Forgot. From now on only NATIV git'"
-alias gp="git push"
-# alias gm="git commit -m"
 
 # GOLANG
 alias gr="nodemon --watch './**/*.go' --signal SIGTERM --exec 'go' run main.go"
@@ -142,7 +140,6 @@ esac
 gcap() {
     git commit -m "$*"
 }
-
 
 gfeat() {
     gcap "✨ FEAT: $@"
