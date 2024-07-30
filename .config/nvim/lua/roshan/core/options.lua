@@ -87,10 +87,10 @@ vim.opt.fillchars:append({ eob = " " })           -- fills ~ sign with empty spa
 --
 -- -- Add asterisks in block comments
 --
--- -- wrap txt and markdown file
--- vim.cmd([[
---   augroup TxtFileSettings
---     autocmd!
---     autocmd BufEnter *.txt,*.md setlocal wrap linebreak
---   augroup END
--- ]])
+-- wrap txt and markdown file
+vim.cmd([[
+  augroup TxtFileSettings
+    autocmd!
+    autocmd BufEnter *.txt,*.md setlocal wrap linebreak
+  augroup END
+]])
