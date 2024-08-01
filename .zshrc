@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
-export EDITOR="nvim"
+export EDITOR="lvim"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -102,7 +102,7 @@ export EDITOR="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
-alias nv="nvim"
+alias nv="lvim"
 # Git and github
 alias gla="git log --oneline --abbrev-commit --all --graph --decorate --color --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr)'"
 alias gl="git log --oneline --decorate --date=short"
@@ -119,6 +119,7 @@ alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 start"
 alias pstop="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 stop"
 
 # PATHS
+export PATH=~/.local/bin:$PATH # User home path
 export PATH=/opt/homebrew/bin:$PATH # Homebrew Path
 export PATH=/opt/nvim/bin:$PATH # Neovim Path
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # Vscode Path
@@ -209,6 +210,6 @@ LC_ALL=en_US.UTF-8
 export PATH="/Users/roshanpaudel/.detaspace/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
