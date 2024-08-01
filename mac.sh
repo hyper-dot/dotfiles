@@ -14,6 +14,10 @@ stow -t ~/.config/alacritty alacritty
 mkdir ~/.config/nvim
 stow -t ~/.config/nvim nvim
 
+# for lunarvim
+mkdir ~/.config/lvim
+stow -t ~/.config/lvim lvim
+
 # for tmux
 mkdir ~/.config/tmux
 stow -t ~/.config/tmux tmux
