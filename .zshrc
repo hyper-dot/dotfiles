@@ -119,6 +119,7 @@ alias pstart="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 start"
 alias pstop="LC_ALL="C" pg_ctl -D /opt/homebrew/var/postgresql@14 stop"
 
 # PATHS
+export PATH=~/.local/share/node-v20/bin:$PATH # Node JS path
 export PATH=~/.local/bin:$PATH # User home path
 export PATH=/opt/homebrew/bin:$PATH # Homebrew Path
 export PATH=/opt/nvim/bin:$PATH # Neovim Path
