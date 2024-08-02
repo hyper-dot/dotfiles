@@ -18,7 +18,7 @@ lvim.keys.normal_mode = {
   ['<leader>rn'] = vim.lsp.buf.rename,
   ['<leader>d'] = vim.diagnostic.open_float,
   ['<leader>D'] = "<cmd>Telescope diagnostics<CR>",
-  ['<leader>gd'] = "<cmd>Telescope lsp_definitions<CR>",
+  ['gd'] = "<cmd>Telescope lsp_definitions<CR>",
   -- Nvim tree
   ['<leader>e'] = "<cmd>NvimTreeFindFileToggle<CR>",
   -- Telsecope
