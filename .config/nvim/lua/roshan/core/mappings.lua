@@ -19,7 +19,7 @@ k.set("n", "<C-l>", "g_")
 -- k.set("n", "<leader><S-s>", ":split<CR>")
 
 -- NoeTree File explorer
-k.set("n", "<leader>e", ":Neotree reveal toggle<CR>", opts)
+-- k.set("n", "<leader>e", ":Neotree reveal toggle<CR>", opts)
 
 -- In insert mode
 k.set("i", "jj", "<ESC>") -- Exits insert mode

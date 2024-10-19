@@ -1,19 +1,19 @@
 import = [
-    "~/dotfiles/.config/alacritty/alacritty-theme/themes/catppuccin_mocha.toml"
+    "~/dotfiles/.config/alacritty/alacritty-theme/themes/one_dark.toml"
 ]
-
 [ env ]
 # TERM = "xterm-256color"
 
 [window]
 padding.x = 2
-padding.y = 2
+padding.y = 0
 # opacity=0.90
 blur=true
 startup_mode='Maximized'
 
 
 [font]
+# normal.family = "JetBrainsMono NF"
 normal.family = "JetBrainsMono NF"
 offset.y = 2
 

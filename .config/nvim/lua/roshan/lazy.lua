@@ -18,7 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup(
-  { { import = "roshan.plugins" }, { import = "roshan.plugins.lsp" }, { import = "roshan.plugins.colorschemes" } }, {
+-- { { import = "roshan.plugins" }, { import = "roshan.plugins.lsp" }, { import = "roshan.plugins.colorschemes" } }, {
+  { { import = "roshan.plugins" } }, {
     checker = {
       enabled = true,
       notify = false

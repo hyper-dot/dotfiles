@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/roshanpaudel/.zsh/completions:"* ]]; then export FPATH="/Users/roshanpaudel/.zsh/completions:$FPATH"; fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -88,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
-export EDITOR="lvim"
+export EDITOR="nvim"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -102,7 +104,7 @@ export EDITOR="lvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
-alias nv="lvim"
+alias nv="nvim"
 # Git and github
 alias gla="git log --oneline --abbrev-commit --all --graph --decorate --color --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr)'"
 alias gl="git log --oneline --decorate --date=short"
@@ -198,6 +200,56 @@ $GREEN gtst$NORMAL — 🧪️ TEST
 $GREEN gbrk$NORMAL — ‼️ BREAKING"
 }
 
+service(){
+# Check if a name argument is provided
+if [ -z "$1" ]; then
+  echo "Error: No name provided. Usage: ./create_files.sh <name>"
+  exit 1
+fi
+
+# Get the folder name from the argument
+name=$1
+
+# Create the folder
+mkdir -p "$name"
+
+# Function to capitalize the first letter
+capitalize() {
+  echo "$1" | awk '{ print toupper(substr($0, 1, 1)) tolower(substr($0, 2)) }'
+}
+
+# Capitalized name for class names
+capitalized_name=$(capitalize "$name")
+
+# Create the required files inside the folder
+touch "$name/$name.route.ts" "$name/$name.docs.ts" "$name/$name.controller.ts" "$name/$name.service.ts"
+
+# Add content to the .route.ts file
+echo "import { Router } from 'express';
+
+export class ${capitalized_name}Route {
+  router: Router;
+  constructor() {
+    this.router = Router();
+  }
+}
+
+const ${name}Routes = new ${capitalized_name}Route().router;
+export default ${name}Routes;" > "$name/$name.route.ts"
+
+# Add default class export to controller and service files
+echo "export default class ${capitalized_name}Controller {}" > "$name/$name.controller.ts"
+echo "export default class ${capitalized_name}Service {}" > "$name/$name.service.ts"
+
+# Notify the user of success
+echo "Folder '$name' and files created successfully:"
+echo "$name/$name.route.ts"
+echo "$name/$name.docs.ts"
+echo "$name/$name.controller.ts"
+echo "$name/$name.service.ts"
+}
+
+
 # bun completions
 [ -s "/Users/roshan/.bun/_bun" ] && source "/Users/roshan/.bun/_bun"
 
@@ -211,6 +263,14 @@ LC_ALL=en_US.UTF-8
 export PATH="/Users/roshanpaudel/.detaspace/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+. "/Users/roshanpaudel/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
