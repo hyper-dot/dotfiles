@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# If a path is provided, use it; otherwise use current directory
+if [ $# -eq 0 ]; then
+    target_path="$(pwd)"
+else
+    target_path="$1"
+fi
+
+# Resolve to absolute path
+target_path="$(realpath "$target_path")"
+
+# Check if path exists
+if [ ! -e "$target_path" ]; then
+    echo "Error: Path does not exist: $target_path"
+    exit 1
+fi
+
+# Launch cursor with the specified path and redirect output to /dev/null
+cursor "$target_path" >/dev/null 2>&1 &
+
+# Exit the terminal
+exit 0
