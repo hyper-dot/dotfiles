@@ -179,3 +179,14 @@ alias sand='ssh -i ~/Documents/sandconsole.pem  root@143.244.150.92'
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+#SOLANA
+export PATH="/home/linux/.local/share/solana/install/active_release/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/linux/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
